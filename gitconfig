@@ -1,0 +1,21 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = <nome do usúario>
+#	email = <email do usuário>
+[http]
+	proxy = http://<user>:<senha>@<endereço e porta do proxy>
+[https]
+	proxy = http://<user>:<senha>@<endereço e porta do proxy>
+[core]
+  #Ao editar esse arquivo via comando git, o notepad++ será aberto (e não o vim)
+	editor = \"C:/Program Files (x86)/Notepad++/notepad++.exe\" -multiInst -nosession -notabbar -noPlugin
+	autocrlf = false
+[alias]
+	cb = checkout -b
+	co = checkout
+	ec = config --global --edit
+	m = merge --no-ff -e
+	pr = pull --rebase
+	ss = status
+	graph = log --graph --oneline --decorate --all
